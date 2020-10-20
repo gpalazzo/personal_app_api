@@ -16,4 +16,4 @@ class PersonalBalance(Resource):
         db = DBClient(db_name="financial")
         df = db.execute_sql_statement(sql_file_name="get_personal_balance",
                                       api_post_json=self.json_from_post)
-        return df.to_json()
+        return df.to_json(orient="records")
