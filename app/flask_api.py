@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Api
 from resources.health import HealthCheck
 from waitress import serve
-from resources.balance.balance import PersonalBalance
+from resources.personal_balance.personal_balance import PersonalBalance
 
 
 # flask app
